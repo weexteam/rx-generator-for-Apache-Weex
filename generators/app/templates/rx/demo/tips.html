@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rx dev guide</title>
+    <style>
+        *{margin: 0; padding: 0}
+        .container{padding: 50px; text-align: center}
+        h1{ font-size: 32px; font-family: Arial; color: rgba(0,0,0,0.8); text-align: center}
+        .desc{font-size: 16px; margin: 20px auto; width: 380px; line-height: 39px; text-align: left}
+        .img,.img img{ width: 400px; height: 400px; line-height: 400px; display: inline-block; vertical-align: middle; color: darkred; background: #f2f2f2}
+        a{ color: #c12127}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Weex Page View</h1>
+    <div id="J_img"  class="img">
+
+    </div>
+    <div class="desc">
+        <ol>
+            <li>The QR code can work together with<a href="http://alibaba.github.io/weex/download.html"> Weex Playground App </a>, Open it and scan the Qr code. </li>
+            <li>more details to view <a href="http://alibaba.github.io/weex/doc/">weex doc</a></li>
+        </ol>
+    </div>
+</div>
+<script>
+    (function(){
+        function getURLParameter(name) {
+            return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+        }
+
+        var wxUrl = getURLParameter('_wx_tpl');
+        var imgDom = document.getElementById('J_img');
+        if(wxUrl){
+            imgDom.innerHTML = '<img src="http://s.jiathis.com/qrcode.php?url=https://www.tmall.com/?_wx_tpl='+ wxUrl +'" title="use Weex Playground App" />'
+        }else {
+            imgDom.innerHTML = 'Missing URL parameter : _wx_tpl'
+        }
+    })();
+
+
+
+</script>
+
+</body>
+</html>

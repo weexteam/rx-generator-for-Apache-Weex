@@ -12,7 +12,7 @@ describe('generator-weex-rx:app', function () {
 
   it('creates files', function () {
     assert.file([
-      'dummyfile.txt'
+      '_gitignore'
     ]);
   });
 });

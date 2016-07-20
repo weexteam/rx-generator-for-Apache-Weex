@@ -1,6 +1,6 @@
 {
   "name": "generator-weex-rx",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "yeoman weex rx",
   "homepage": "https://github.com/weexteam/generator-weex-rx",
   "author": {
@@ -49,5 +49,5 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "MIT"
+  "licenses": "GPL-3.0"
 }
