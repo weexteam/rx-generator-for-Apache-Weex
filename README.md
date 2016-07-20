@@ -8,7 +8,7 @@
 ```bash
 # Make sure both is installed globally
 $ npm install -g yo 
-$npm install -g weex-rx
+$ npm install -g weex-rx
 ```
 
 ## Setting up projects
@@ -31,10 +31,10 @@ The following commands are available in your project:
 $ npm start 
 
 # Just build the dist version and copy static files
-npm run build
+$ npm run build
 
 # Run unit tests
-npm test
+$ npm test
 
 ```
 
