@@ -8,7 +8,7 @@
 ```bash
 # Make sure both is installed globally
 $ npm install -g yo 
-$ npm install -g weex-rx
+$ npm install -g generator-weex-rx
 ```
 
 ## Setting up projects
