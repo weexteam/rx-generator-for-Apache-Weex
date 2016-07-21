@@ -16,7 +16,7 @@
 
 <div class="container">
     <h1>Weex Page View</h1>
-    <div id="J_img"  class="img">
+    <div id="J_img" class="img">
 
     </div>
     <div class="desc">
@@ -35,15 +35,11 @@
         var wxUrl = getURLParameter('_wx_tpl');
         var imgDom = document.getElementById('J_img');
         if(wxUrl){
-            imgDom.innerHTML = '<img src="http://s.jiathis.com/qrcode.php?url=https://www.tmall.com/?_wx_tpl='+ wxUrl +'" title="use Weex Playground App" />'
+            imgDom.innerHTML = '<img src="http://s.jiathis.com/qrcode.php?url=https://www.example.com/?_wx_tpl='+ wxUrl +'" title="use Weex Playground App" />'
         }else {
             imgDom.innerHTML = 'Missing URL parameter : _wx_tpl'
         }
     })();
-
-
-
 </script>
-
 </body>
 </html>
