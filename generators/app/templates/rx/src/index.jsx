@@ -1,6 +1,6 @@
 'use strict';
-import {createElement, Component} from '@ali/rx';
-import { View, Text } from '@ali/rx-components';
+import {createElement, Component} from 'weex-rx';
+import { View, Text } from 'weex-rx-components';
 
 class Demo extends Component {
     render() {
