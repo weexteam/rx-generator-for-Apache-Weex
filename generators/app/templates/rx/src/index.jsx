@@ -12,12 +12,6 @@ class Demo extends Component {
                 <Text style={styles.instructions}>
                     To get started, edit src/index.jsx
                 </Text>
-                <Text style={styles.instructions}>
-                    Press Cmd+R to reload,
-                </Text>
-                <Text style={styles.instructions}>
-                    Cmd+D or shake for dev menu
-                </Text>
             </View>
         );
     }
