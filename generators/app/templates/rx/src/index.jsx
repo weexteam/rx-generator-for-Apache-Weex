@@ -7,7 +7,7 @@ class Demo extends Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>
-                    Welcome to R(x)!
+                    Welcome to Rx!
                 </Text>
                 <Text style={styles.instructions}>
                     To get started, edit src/index.jsx
@@ -31,14 +31,14 @@ const styles = {
         backgroundColor: '#F5FCFF',
     },
     welcome: {
-        fontSize: 20,
+        fontSize: '20rem',
         textAlign: 'center',
-        margin: 10,
+        margin: '10rem',
     },
     instructions: {
         textAlign: 'center',
         color: '#333333',
-        marginBottom: 5,
+        marginBottom: '5rem',
     },
 };
 
