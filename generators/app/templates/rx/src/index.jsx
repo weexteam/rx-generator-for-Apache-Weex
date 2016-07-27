@@ -1,18 +1,17 @@
 'use strict';
-import {createElement, Component} from 'weex-rx';
-import { View, Text } from 'weex-rx-components';
+import {createElement, Component, render} from 'weex-rx';
 
-class Demo extends Component {
+class App extends Component {
     render() {
         return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    Welcome to Rx!
-                </Text>
-                <Text style={styles.instructions}>
+            <div style={styles.container}>
+                <text style={styles.welcome}>
+                    Welcome to Weex!
+                </text>
+                <text style={styles.instructions}>
                     To get started, edit src/index.jsx
-                </Text>
-            </View>
+                </text>
+            </div>
         );
     }
 }
@@ -25,15 +24,15 @@ const styles = {
         backgroundColor: '#F5FCFF',
     },
     welcome: {
-        fontSize: '20rem',
+        fontSize: 20,
         textAlign: 'center',
-        margin: '10rem',
+        margin: 10,
     },
     instructions: {
         textAlign: 'center',
         color: '#333333',
-        marginBottom: '5rem',
+        marginBottom: 5,
     },
 };
 
-export default Demo;
+render(<App />);
