@@ -6,9 +6,7 @@
     "build": "./node_modules/.bin/gulp build"
   },
   "dependencies": {
-    "weex-rx": "0.x.x",
-    "weex-rx-components": "0.x.x",
-    "weex-rx-mounter": "0.x.x"
+    "weex-rx": "0.x.x"
   },
   "devDependencies": {
     "weex-rx-webpack-plugin": "^0.2.0",
